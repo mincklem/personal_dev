@@ -14,7 +14,6 @@ var myShelf = [];
 var bookChoice; 
 var scaledElement;
 var myImageBase64;
-var shelfPNG;
 var classicLevels = ["No books? Not even a short one? For shame, for shame...Read a few more, you literary ingenue, and bump up your classic score. ", 
 "Token effort? Get ye to a library. Stat.", 
 "You're about as classic as a pathetic fallacy. (What a mixed metaphor).", 
@@ -144,12 +143,15 @@ function shelfClick(){
       });
 }
 
-function appendSocial(x){
-  var y = x
-    if (y==1) {
-    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><span type='sbtn' class='st_facebook_custom' st_image='"+shelfPNG+"'><img src='img/facebook.png'></span><span type='sbtn' class='st_twitter_custom'><img src='img/twitter.png'></span><span type='sbtn' class='st_pinterest_custom' st_url='http://www.modernlibrary.com'><img src='img/pinterest.png'></span><span type='sbtn' class='st_tumblr_custom' st_url='http://www.modernlibrary.com'><img src='img/tumblr.png'></span></div>");
+function appendSocial(x, shelfPNG){
+  var shelfPNG = shelfPNG;
+  console.log(shelfPNG);
+  var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=http://localhost/Shelf_Builder/&display=popup&link=http://localhost/Shelf_Builder/&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
+  var socialboxnum = x;
+    if (socialboxnum==1) {
+    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='img/facebook.png'></span></a><span type='sbtn' class='st_twitter_custom'><img src='img/twitter.png'></span><span type='sbtn' class='st_pinterest_custom' st_url='http://www.modernlibrary.com'><img src='img/pinterest.png'></span><span type='sbtn' class='st_tumblr_custom' st_url='http://www.modernlibrary.com'><img src='img/tumblr.png'></span></div>");
   }
-    else if (y==2) {
+    else if (socialboxnum==2) {
     }
 }
 
@@ -192,78 +194,13 @@ function getShelf(){
             request.success(function(response, data, status, headers, config){
               shelfPNG = "http://" + location.host + "/Shelf_Builder/outputs/" + response;
               console.log(shelfPNG);
-              $(".sbtn").attr("st_image", shelfPNG)
-              $(".sbtn").attr("st_url", shelfPNG)
+              appendSocial(1, shelfPNG);
             });
-             // appendSocial(1);
-            shareThis(shelfPNG);
         }, 
       });
 
     });
 }
-// function shareThis(shelfPNG){
-//     new Share("#getContent", {
-//         url:  "www.bbc.com",
-//         title:  "this is the title",
-//         description: "the description",
-//         image: shelfPNG
-//     });
-// }
-
-// function shareThis(x){
-//   shelfPNG = x;
-//       stWidget.addEntry({
-//     "service": "facebook",
-//     "element": document.getElementById('social1'),
-//     "url": "http://www.modernlibrary.com",
-//     "title":"sharethis",
-//     "type":"large",
-//     "text":"ShareThis",
-//     "image": shelfPNG,
-//     "summary":"this is description3"   
-//   });
-//             stWidget.addEntry({
-//     "service": "twitter",
-//     "element": document.getElementById('social1'),
-//     "url": "http://www.modernlibrary.com",
-//     "title":"sharethis",
-//     "type":"large",
-//     "text":"ShareThis" ,
-//     "image": ""+shelfPNG+"",
-//     "summary":"this is description3"   
-//   });
-//                   stWidget.addEntry({
-//     "service": "tumblr",
-//     "element": document.getElementById('social1'),
-//     "url": "http://www.modernlibrary.com",
-//     "title":"sharethis",
-//     "type":"large",
-//     "text":"ShareThis" ,
-//     "image": ""+shelfPNG+"",
-//     "summary":"this is description3"   
-//   });
-//                         stWidget.addEntry({
-//     "service": "pinterest",
-//     "element": document.getElementById('social1'),
-//     "url": "http://www.modernlibrary.com",
-//     "title":"sharethis",
-//     "type":"large",
-//     "text":"ShareThis" ,
-//     "image": shelfPNG,
-//     "summary":"this is description3"   
-//   });
-//     // stWidget.addEntry({
-//     //     "service":"sharethis", 
-//     //     "element": $('#social1'),
-//     //     "url":"http://www.modernlibrary",
-//     //     "title":"sharethis",  
-//     //     "type":"custom",
-//     //     "text":"ShareThis" ,
-//     //     "image":""+shelfPNG+"",
-//     //     "summary":"this is description1"   
-//     // });
-// }
 
 //Book Click from Saved Covers//
 function bookClick(){

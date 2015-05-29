@@ -8,37 +8,11 @@
    <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/html2canvas.js"></script>
 <script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript"></script>
+<script src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
 
 <!-- FB Share button -->
 </head>
 <body>	
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '487604788070849',
-      xfbml      : true,
-      version    : 'v2.3'
-    });
-  };
-        FB.ui({
-     method: 'share_open_graph',
-     action_type: 'og.likes',
-     action_properties: JSON.stringify({
-      object:'https://developers.facebook.com/docs/',
-     })
-    }, function(response){});
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-
-</script>
-
 	<div id='getLayer'></div>
 	<div id='overlay'></div>
 		<div id='getContent'>
