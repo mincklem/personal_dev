@@ -536,22 +536,22 @@ function shareThis(shelfPNG){
          var shelfPNG = shelfPNG;
          stWidget.addEntry({
                  "service":"twitter",
-                 "element":document.getElementById('button_1'),
+                 "element":document.getElementById('socialBox1'),
                  "url":"https://powerful-caverns-4175.herokuapp.com/",
                  "title":"Just made my Modern Library Shelf! #books",
                  "type":"large",
-                 "text":"ShareThis" ,
+                 "text":"Just made my Modern Library Shelf! #books",
                  "image": shelfPNG,
                  "summary":"this is description1"
          });
 
                   stWidget.addEntry({
                  "service":"sharethis",
-                 "element":document.getElementById('button_1'),
+                 "element":document.getElementById('socialBox1'),
                  "url":"https://powerful-caverns-4175.herokuapp.com/",
                  "title":"Just made my Modern Library Shelf! #books",
                  "type":"large",
-                 "text":"ShareThis" ,
+                 "text":"Just made my Modern Library Shelf! #books",
                  "image": shelfPNG,
                  "summary":"this is description1"
          });
