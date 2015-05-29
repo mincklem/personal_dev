@@ -530,7 +530,6 @@ function setShelves(first_load) {
           dragDrop();
           swap();
           shelfClick();
-
       }
   
 function shareThis(shelfPNG){

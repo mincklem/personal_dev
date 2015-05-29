@@ -7,8 +7,18 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
    <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/html2canvas.js"></script>
-<script type="text/javascript">var switchTo5x=true;</script>
 <script src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
+
+<!-- SHARE THIS -->
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">
+        stLight.options({
+                publisher:'12345',
+        });
+</script>
+
 
 </head>
 <body>	
