@@ -147,11 +147,11 @@ function appendSocial(x, shelfPNG){
   var shelfPNG = shelfPNG;
   // var shelfPNG = "http://i.imgur.com/Twt4Xbf.gif?1";
   console.log(shelfPNG);
-  var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=http://modernlibrary.webdev.us.randomhouse.com/Shelf_Builder/&display=popup&link=http://modernlibrary.webdev.us.randomhouse.com/Shelf_Builder/&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
-  var pin_share_url = "//pinterest.com/pin/create/button/?url=www.modernlibrary.com&amp;media="+shelfPNG+"&amp;description=My+Shelf"; 
+  var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com&display=popup&link=https://powerful-caverns-4175.herokuapp.com&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
+  var pin_share_url = "//pinterest.com/pin/create/button/?url=https://powerful-caverns-4175.herokuapp.com/&amp;media="+shelfPNG+"&amp;description=My+Shelf"; 
   var socialboxnum = x;
     if (socialboxnum==1) {
-    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='img/facebook.png'></span></a><span type='sbtn' st_image='http://i.imgur.com/Twt4Xbf.gif?1' class='st_twitter_custom'><img src='img/twitter.png'></span><a href="+pin_share_url+"<span type='sbtn' class='st_pinterest_custom'><img src='img/pinterest.png'></span></a><span type='sbtn' class='st_tumblr_custom' st_url='http://www.modernlibrary.com'><img src='img/tumblr.png'></span></div>");
+    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='img/facebook.png'></span></a><span type='sbtn' class='st_twitter_custom'><img src='img/twitter.png'></span><a href="+pin_share_url+"<span type='sbtn' class='st_pinterest_custom'><img src='img/pinterest.png'></span></a><span type='sbtn' class='st_tumblr_custom' st_url='https://powerful-caverns-4175.herokuapp.com/'><img src='img/tumblr.png'></span></div>");
   }
     else if (socialboxnum==2) {
     }

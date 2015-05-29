@@ -3,8 +3,8 @@
 <head>
 	<title>Modern Library Shelf-Builder</title>
 	  <link rel="stylesheet" type="text/css" href="css/main.css">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
    <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/html2canvas.js"></script>
 <script type="text/javascript">var switchTo5x=true;</script>
