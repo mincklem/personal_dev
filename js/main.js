@@ -188,13 +188,13 @@ function getShelf(){
         var request = $.ajax({
               type: "POST",
               proccessData: false,
-              url: "https://" + location.host + "/Shelf_Builder/php/image.php",
+              url: "https://" + location.host + "/php/image.php",
               data: {
                 image: myImageBase64
               }
             });
             request.success(function(response, data, status, headers, config){
-              shelfPNG = "https://" + location.host + "/Shelf_Builder/outputs/" + response;
+              shelfPNG = "https://" + location.host + "/outputs/" + response;
               console.log(shelfPNG);
               appendSocial(1, shelfPNG);
             });
