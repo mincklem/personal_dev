@@ -3,16 +3,16 @@
 <head>
 	<title>Modern Library Shelf-Builder</title>
 	  <link rel="stylesheet" type="text/css" href="css/main.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
    <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/html2canvas.js"></script>
 <script type="text/javascript">var switchTo5x=true;</script>
 <script src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
 
-<!-- FB Share button -->
 </head>
 <body>	
+
 	<div id='getLayer'></div>
 	<div id='overlay'></div>
 		<div id='getContent'>
@@ -26,8 +26,6 @@
 				<div id="shelfClose" class="button">x</div>
 			</div>
 <div class="mainContainer">
-
-	<div class='shareaholic-canvas' data-app='share_buttons' data-app-id='17737342' data-image="http://i.imgur.com/sjpa0Gg.jpg"></div>
 	
 		<div id="header">
 			<a target="_blank" href="http://www.modernlibrary.com"><div id="siteName"></div></a>
