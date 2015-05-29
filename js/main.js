@@ -146,10 +146,10 @@ function shelfClick(){
 function appendSocial(x, shelfPNG){
   var shelfPNG = shelfPNG;
   console.log(shelfPNG);
-  var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=http://localhost/Shelf_Builder/&display=popup&link=http://localhost/Shelf_Builder/&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
+  var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com/&display=popup&link=https://powerful-caverns-4175.herokuapp.com/&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
   var socialboxnum = x;
     if (socialboxnum==1) {
-    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='img/facebook.png'></span></a><span type='sbtn' class='st_twitter_custom'><img src='img/twitter.png'></span><span type='sbtn' class='st_pinterest_custom' st_url='http://www.modernlibrary.com'><img src='img/pinterest.png'></span><span type='sbtn' class='st_tumblr_custom' st_url='http://www.modernlibrary.com'><img src='img/tumblr.png'></span></div>");
+    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='img/facebook.png'></span></a><span type='sbtn' class='st_twitter_custom'><img src='img/twitter.png'></span><span type='sbtn' class='st_pinterest_custom' st_url='https://powerful-caverns-4175.herokuapp.com/'><img src='img/pinterest.png'></span><span type='sbtn' class='st_tumblr_custom' st_url='https://powerful-caverns-4175.herokuapp.com/'><img src='img/tumblr.png'></span></div>");
   }
     else if (socialboxnum==2) {
     }
@@ -186,13 +186,13 @@ function getShelf(){
         var request = $.ajax({
               type: "POST",
               proccessData: false,
-              url: "http://" + location.host + "/Shelf_Builder/php/image.php",
+              url: "https://" + location.host + "/Shelf_Builder/php/image.php",
               data: {
                 image: myImageBase64
               }
             });
             request.success(function(response, data, status, headers, config){
-              shelfPNG = "http://" + location.host + "/Shelf_Builder/outputs/" + response;
+              shelfPNG = "https://" + location.host + "/Shelf_Builder/outputs/" + response;
               console.log(shelfPNG);
               appendSocial(1, shelfPNG);
             });
