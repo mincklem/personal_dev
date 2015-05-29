@@ -146,7 +146,6 @@ function shelfClick(){
 function appendSocial(x, shelfPNG){
   var shelfPNG = shelfPNG;
   // var shelfPNG = "http://i.imgur.com/Twt4Xbf.gif?1";
-  console.log(shelfPNG);
   var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com&display=popup&link=https://powerful-caverns-4175.herokuapp.com&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
   var pin_share_url = "//pinterest.com/pin/create/button/?url=https://powerful-caverns-4175.herokuapp.com/&amp;media="+shelfPNG+"&amp;description=My+Shelf"; 
   var socialboxnum = x;
@@ -197,6 +196,7 @@ function getShelf(){
               shelfPNG = "https://" + location.host + "/outputs/" + response;
               console.log(shelfPNG);
               appendSocial(1, shelfPNG);
+              shareThis(shelfPNG)
             });
         }, 
       });
@@ -236,39 +236,6 @@ function setDisplayedShelf() {
     shelfClick();
 }
 
-// function setShelf(a){
-//     var a = a;
-//     var b = a-1;
-//     //hide last shelf 
-//     if (a==1) {
-//       $("#row"+a+"").css("visibility", "visible");
-//       $("#row"+a+"").css("visibility", "visible");
-//       $("#row"+a+"").addClass("displayedShelf");
-//     }
-//     else if (a>1) {
-//         $("#row"+b+"").children().addClass("miniSpine");
-//         $("#row"+b+"").addClass("minify minify"+b+"");
-//         $("#row"+b+"").removeClass("displayedShelf");
-//         //add new shelf rows if necessary
-//         $("#row"+a+"").css("visibility", "visible");
-//         $("#row"+a+"").css("visibility", "visible");
-//         $("#row"+a+"").addClass("displayedShelf");
-//      };
-//     var id = $(bookChoice).attr("id");
-//     var ind = $.inArray(id, ISBNs);
-//     var spinePick = spines[ind];
-//     var y = $(bookChoice).attr("count");
-//     $("#row"+a+"").append("<div class='spine' count='"+y+"' id='"+id+"'><img src="+spinePick+"></img></div");
-//     $(".spine").draggable({
-//        zIndex: 13,
-//         cursor: 'move',
-//         stack: "#mainContainer",
-//        revert: function(event, ui){
-//         return true;
-//         }
-//       });
-//   }
-
   function swap(){
       $(".shelf").click(function(){
       $this = $(this);
@@ -280,15 +247,6 @@ function setDisplayedShelf() {
     });
     shelfClick();
   }
-
-  // function removeNewRow(a){
-  //   var a = a;
-  //   var b = a-1;
-  //   $("#row"+a+"").removeClass("displayedShelf");
-  //   $("#row"+b+"").children().removeClass("miniSpine");
-  //   $("#row"+b+"").removeClass("minify minify"+b+"");
-  //   $("#row"+a+"").css("visibility", "hidden"); 
-  // }
 
 //Stored Cover Image Files//
 
@@ -562,7 +520,7 @@ function setShelves(first_load) {
                     return true;
                   }
                 });
-              // }
+ 
               }
             }
           });
@@ -574,76 +532,28 @@ function setShelves(first_load) {
           shelfClick();
 
       }
+  
+function shareThis(shelfPNG){
+         var shelfPNG = shelfPNG;
+         stWidget.addEntry({
+                 "service":"twitter",
+                 "element":document.getElementById('button_1'),
+                 "url":"https://powerful-caverns-4175.herokuapp.com/",
+                 "title":"Just made my Modern Library Shelf! #books",
+                 "type":"large",
+                 "text":"ShareThis" ,
+                 "image": shelfPNG,
+                 "summary":"this is description1"
+         });
 
-//old function for setting cookie shelves
-// function setCookieShelf(cookieShelf){
-//     myShelf = cookieShelf;
-//       for(a=0; a<myShelf.length; a++){ 
-//             var id = myShelf[a];
-//             var ind = ISBNs.indexOf(id);
-//             var spinePick = spines[ind];  
-//         $("#covers").find("#"+id+"").hide().css({
-//             "margin": "0px",
-//             "width": "0px",
-//         });
-//         //<25 books 
-//       if (a<=24) {
-//         $("#row1").css("visibility", "visible");
-//         $("#row1").append("<div class='spine' count='"+ind+"' id='"+id+"'><img src="+spinePick+"></img></div");
-//         $(".spine").draggable({
-//                 zIndex: 13,
-//                 cursor: 'move',
-//                 stack: "#mainContainer",
-//                 revert: function(event, ui){
-//                   return true;
-//                   }
-//           });
-//         }
-//         //<50 books 
-//       else if (a>24 && a<=49) {
-//         $("#row1").children().addClass("miniSpine");
-//         $("#row1").addClass("minify minify1");
-//         $("#row2").css("visibility", "visible");
-//         $("#row2").append("<div class='spine' count='"+ind+"' id='"+id+"'><img src="+spinePick+"></img></div");
-//         $(".spine").draggable({
-//                 zIndex: 13,
-//                 cursor: 'move',
-//                 stack: "#mainContainer",
-//                 revert: function(event, ui){
-//                   return true;
-//                   }
-//         });
-//       }
-//       else if (a>49 && a<=74) {
-//         $("#row2").children().addClass("miniSpine");
-//         $("#row2").addClass("minify minify2");
-//         $("#row3").css("visibility", "visible");
-//         $("#row3").append("<div class='spine' count='"+ind+"' id='"+id+"'><img src="+spinePick+"></img></div");
-//         $(".spine").draggable({
-//                 zIndex: 13,
-//                 cursor: 'move',
-//                 stack: "#mainContainer",
-//                 revert: function(event, ui){
-//                   return true;
-//                   }
-//         });
-//       }
-//       else if (a>74 && a<=100) {
-//         $("#row3").children().addClass("miniSpine");
-//         $("#row3").addClass("minify minify3");
-//         $("#row4").css("visibility", "visible");
-//         $("#row4").append("<div class='spine' count='"+ind+"' id='"+id+"'><img src="+spinePick+"></img></div");
-//         $(".spine").draggable({
-//                 zIndex: 13,
-//                 cursor: 'move',
-//                 stack: "#mainContainer",
-//                 revert: function(event, ui){
-//                   return true;
-//                   }
-//         });
-//       }
-//       else {}
-//       }
-//     shelfClick()
-// }
-
+                  stWidget.addEntry({
+                 "service":"sharethis",
+                 "element":document.getElementById('button_1'),
+                 "url":"https://powerful-caverns-4175.herokuapp.com/",
+                 "title":"Just made my Modern Library Shelf! #books",
+                 "type":"large",
+                 "text":"ShareThis" ,
+                 "image": shelfPNG,
+                 "summary":"this is description1"
+         });
+}
