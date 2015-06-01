@@ -16,6 +16,7 @@
 <script type="text/javascript">
         stLight.options({
                 publisher:'12345',
+                onhover: false
         });
 </script>
 
