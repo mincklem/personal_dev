@@ -9,6 +9,11 @@
   <script type="text/javascript" src="js/html2canvas.js"></script>
 <script src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
 
+<!-- JQUERY MOBILE -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
 <!-- SHARE THIS -->
 
 <script type="text/javascript">var switchTo5x=true;</script>
@@ -17,8 +22,8 @@
         stLight.options({
                 publisher:'12345',
                 onhover: false
-        });
-</script>
+        });</script>
+<!-- SHARE THIS -->
 
 
 </head>

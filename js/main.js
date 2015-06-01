@@ -150,7 +150,7 @@ function appendSocial(x, shelfPNG){
   var pin_share_url = "//pinterest.com/pin/create/button/?url=https://powerful-caverns-4175.herokuapp.com/&amp;media="+shelfPNG+"&amp;description=My+Shelf"; 
   var socialboxnum = x;
     if (socialboxnum==1) {
-    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='img/facebook.png'></span></a><span type='sbtn' class='st_twitter_custom'><img src='img/twitter.png'></span><a href="+pin_share_url+"<span type='sbtn' class='st_pinterest_custom'><img src='img/pinterest.png'></span></a><span type='sbtn' class='st_tumblr_custom' st_url='https://powerful-caverns-4175.herokuapp.com/'><img src='img/tumblr.png'></span></div>");
+    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a><span type='sbtn' class='st_twitter_custom'><img src='https://ws.sharethis.com/images/twitter_32.png'></span><a href="+pin_share_url+"<span type='sbtn' class='st_pinterest_custom'><img src='img/pinterest.png'></span></a><span type='sbtn' class='st_tumblr_custom' st_url='https://powerful-caverns-4175.herokuapp.com/'><img src='img/tumblr.png'></span></div>");
   }
     else if (socialboxnum==2) {
     }
@@ -197,7 +197,7 @@ function getShelf(){
               console.log(shelfPNG);
             
               // CUSTOM SHARE BUTTONS //
-              
+
               // appendSocial(1, shelfPNG);
               shareThis(shelfPNG)
             });
@@ -558,7 +558,7 @@ function shareThis(shelfPNG){
                  "summary":"this is description1"
          });
                   stWidget.addEntry({
-                 "service":"facebook",
+                 "service":"pinterest",
                  "element":document.getElementById('socialBox1'),
                  "url":"https://powerful-caverns-4175.herokuapp.com/",
                  "title":"Just made my Modern Library Shelf! #books",
