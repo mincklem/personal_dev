@@ -195,7 +195,10 @@ function getShelf(){
             request.success(function(response, data, status, headers, config){
               shelfPNG = "https://" + location.host + "/outputs/" + response;
               console.log(shelfPNG);
-              appendSocial(1, shelfPNG);
+            
+              // CUSTOM SHARE BUTTONS //
+              
+              // appendSocial(1, shelfPNG);
               shareThis(shelfPNG)
             });
         }, 
