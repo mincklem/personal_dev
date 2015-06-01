@@ -198,7 +198,7 @@ function getShelf(){
             
               // CUSTOM SHARE BUTTONS //
 
-              // appendSocial(1, shelfPNG);
+              appendSocial(1, shelfPNG);
               shareThis(shelfPNG)
             });
         }, 
