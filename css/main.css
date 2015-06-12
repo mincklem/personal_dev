@@ -985,6 +985,11 @@ a {
 }
 /*
 ClassicScore, minishelves overlap*/
+
+@-ms-viewport{
+  width: device-width;
+}
+
 @media (max-width: 990px) {
 	#classicBox {
 		left: initial;

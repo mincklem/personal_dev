@@ -8,6 +8,7 @@
    <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/html2canvas.js"></script>
 <script src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- JQUERY MOBILE -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
