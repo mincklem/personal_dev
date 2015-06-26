@@ -12,8 +12,8 @@
 
 <!-- JQUERY MOBILE -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="//code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
    <script type="text/javascript" src="js/touch-punch.js"></script>
 
 <!-- SHARE THIS -->
