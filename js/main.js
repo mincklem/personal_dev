@@ -546,6 +546,7 @@ function shareThis(shelfPNG){
                  "url":"https://powerful-caverns-4175.herokuapp.com/",
                  "title":"Just made my Modern Library Shelf! #books",
                  "type":"large",
+                 "popup": "false",
                  "text":"Just made my Modern Library Shelf! #books",
                  "image": shelfPNG,
                  "summary":"this is description1"
@@ -556,6 +557,7 @@ function shareThis(shelfPNG){
                  "url":"https://powerful-caverns-4175.herokuapp.com/",
                  "title":"Just made my Modern Library Shelf! #books",
                  "type":"large",
+                 "popup": "false",
                  "text":"Just made my Modern Library Shelf! #books",
                  "image": shelfPNG,
                  "summary":"this is description1"
@@ -566,6 +568,7 @@ function shareThis(shelfPNG){
                  "url":"https://powerful-caverns-4175.herokuapp.com/",
                  "title":"Just made my Modern Library Shelf! #books",
                  "type":"large",
+                 "popup": "false",
                  "text":"Just made my Modern Library Shelf! #books",
                  "image": shelfPNG,
                  "summary":"this is description1"
