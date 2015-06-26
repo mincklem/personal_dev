@@ -375,7 +375,7 @@ function goodReads(clicked){
       crossDomain: true,
       key: "LbfI8uwSm3Hd7X4Q1VoDsA",
       dataType: "jsonp",
-      url:"https:www.goodreads.com/book/isbn?format=jsonp&key=LbfI8uwSm3Hd7X4Q1VoDsA&isbn="+ISBN+""
+      url:"https://www.goodreads.com/book/isbn?format=jsonp&key=LbfI8uwSm3Hd7X4Q1VoDsA&isbn="+ISBN+""
       })
     .success(function(data){
       console.log(data);
