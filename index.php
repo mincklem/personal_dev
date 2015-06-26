@@ -10,11 +10,6 @@
   <script type="text/javascript" src="js/html2canvas.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- JQUERY MOBILE -->
-<link rel="stylesheet" href="//code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="//code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-
 <script src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
 
 <!-- SHARE THIS -->
