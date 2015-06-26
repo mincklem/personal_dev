@@ -150,7 +150,7 @@ function appendSocial(x, shelfPNG){
   var pin_share_url = "//pinterest.com/pin/create/button/?url=https://powerful-caverns-4175.herokuapp.com/&amp;media="+shelfPNG+"&amp;description=My+Shelf"; 
   var socialboxnum = x;
     if (socialboxnum==1) {
-    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a><span type='sbtn' class='st_twitter_custom'><img src='https://ws.sharethis.com/images/twitter_32.png'></span><a href="+pin_share_url+"<span type='sbtn' class='st_pinterest_custom'><img src='img/pinterest.png'></span></a><span type='sbtn' class='st_tumblr_custom' st_url='https://powerful-caverns-4175.herokuapp.com/'><img src='img/tumblr.png'></span></div>");
+    $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a><span type='sbtn' class='st_twitter_custom'><img src='https://ws.sharethis.com/images/twitter_32.png'></span><a href="+pin_share_url+"<span type='sbtn' class='st_pinterest_custom'><img src='img/pinterest.png'></span></a></div>");
   }
     else if (socialboxnum==2) {
     }
@@ -198,7 +198,7 @@ function getShelf(){
             
               // CUSTOM SHARE BUTTONS //
 
-              appendSocial(1, shelfPNG);
+              // appendSocial(1, shelfPNG);
               shareThis(shelfPNG)
             });
         }, 
@@ -537,6 +537,8 @@ function setShelves(first_load) {
   
 function shareThis(shelfPNG){
          var shelfPNG = shelfPNG;
+         var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com&display=popup&link=https://powerful-caverns-4175.herokuapp.com&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
+         $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a></div>");
          stWidget.addEntry({
                  "service":"facebook",
                  "element":document.getElementById('socialBox1'),
