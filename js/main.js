@@ -122,7 +122,7 @@ function overLay(){
     $("#overlay, #closeDetails").click(function(){
         $("#overlay, #details").css({"visibility" : "hidden", "opacity": "0"});
         setTimeout(function(){
-                $("#classicBox").css("z-index", "499");
+                // $("#classicBox").css("z-index", "499");
                 }, 800);
         $("#helpBox, #classicDetails").removeClass("visible");
         $("#howClassic").removeClass("flipped");
@@ -281,7 +281,7 @@ function setCoversSpines(){
         $("#overlay").css({"visibility" : "hidden", "opacity": "0"});
         $("#classicDetails").toggleClass("visible");
         setTimeout(function(){
-      $("#classicBox").css("z-index", "499");
+      // $("#classicBox").css("z-index", "499");
             }, 500);
       overLay();
     }
