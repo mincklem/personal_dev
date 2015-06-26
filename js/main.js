@@ -539,7 +539,7 @@ function shareThis(shelfPNG){
          var shelfPNG = shelfPNG;
          var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com&display=popup&link=https://powerful-caverns-4175.herokuapp.com&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
          $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a></div>");
-         stWidget.addEntry({
+                  
                   stWidget.addEntry({
                  "service":"twitter",
                  "element":document.getElementById('social1'),
