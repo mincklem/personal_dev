@@ -131,7 +131,7 @@ function overLay(){
         $("#the_iframe").attr("src", "");
         return
       })
-};
+}; 
 
 function shelfClick(){
   $(".shelf").click(function(){

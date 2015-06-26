@@ -91,7 +91,7 @@
 				<div id="gr_header"></div>
 				<div id='goodreads-widget'>
 					<iframe id='the_iframe' src=''frameborder='0'>
-				</iframe>
+				</iframe> 
 				</div>
 			
 	</div>
