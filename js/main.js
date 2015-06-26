@@ -540,18 +540,9 @@ function shareThis(shelfPNG){
          var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com&display=popup&link=https://powerful-caverns-4175.herokuapp.com&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
          $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a></div>");
          stWidget.addEntry({
-                 "service":"facebook",
-                 "element":document.getElementById('socialBox1'),
-                 "url":"https://powerful-caverns-4175.herokuapp.com/",
-                 "title":"Just made my Modern Library Shelf! #books",
-                 "type":"large",
-                 "text":"Just made my Modern Library Shelf! #books",
-                 "image": shelfPNG,
-                 "summary":"this is description1"
-         });
                   stWidget.addEntry({
                  "service":"twitter",
-                 "element":document.getElementById('socialBox1'),
+                 "element":document.getElementById('social1'),
                  "url":"https://powerful-caverns-4175.herokuapp.com/",
                  "title":"Just made my Modern Library Shelf! #books",
                  "type":"large",
@@ -561,7 +552,7 @@ function shareThis(shelfPNG){
          });
                   stWidget.addEntry({
                  "service":"pinterest",
-                 "element":document.getElementById('socialBox1'),
+                 "element":document.getElementById('social1'),
                  "url":"https://powerful-caverns-4175.herokuapp.com/",
                  "title":"Just made my Modern Library Shelf! #books",
                  "type":"large",
@@ -571,7 +562,7 @@ function shareThis(shelfPNG){
          });
                 stWidget.addEntry({
                  "service":"sharethis",
-                 "element":document.getElementById('socialBox1'),
+                 "element":document.getElementById('social1'),
                  "url":"https://powerful-caverns-4175.herokuapp.com/",
                  "title":"Just made my Modern Library Shelf! #books",
                  "type":"large",
