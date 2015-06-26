@@ -74,10 +74,10 @@
 		<div id="shareButton2" class="button">Share</div>
 		<div class="socialBox" id="socialBox2">
 				<div id="social2" class="social">
-				<span type="sbtn" class="st_facebook_custom" st_url="http://www.google.com" st_image=""><img src="img/facebook.png" > </span>
+<!-- 				<span type="sbtn" class="st_facebook_custom" st_url="http://www.google.com" st_image=""><img src="img/facebook.png" > </span>
 				<span type="sbtn" class="st_twitter_custom" st_url='' st_via=""><img src="img/twitter.png" > </span>
 				<span type="sbtn" class="st_pinterest_custom" st_url=''><img src="img/pinterest.png" > </span>
-				<span type="sbtn" class="st_tumblr_custom" st_url=''><img src="img/tumblr.png"> </span>
+				<span type="sbtn" class="st_tumblr_custom" st_url=''><img src="img/tumblr.png"> </span> -->
 				</div>
 			</div>
 	</div>
