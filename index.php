@@ -3,18 +3,17 @@
 <head>
 	<title>Modern Library Shelf-Builder</title>
 	  <link rel="stylesheet" type="text/css" href="css/main.css">
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
    <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/html2canvas.js"></script>
 <script src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- JQUERY MOBILE -->
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-   <script type="text/javascript" src="js/touch-punch.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 
 <!-- SHARE THIS -->
 
