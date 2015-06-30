@@ -1131,11 +1131,13 @@ ClassicScore, minishelves overlap*/
 /*		right: -50px;
 	  left: initial;			
 	  top:100px;*/
-	  visibility: visible
+	  visibility: visible;
+	  opacity: 1;
 	}
 
 	#shareShelf.scrolled {
 	visibility: visible;
+	opacity: 1;
 	}
 
 	#shareButton2 {
