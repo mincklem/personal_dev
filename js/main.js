@@ -588,7 +588,7 @@ function shareShelf(shelfPNG){
 function shareClassic(score){
   console.log("Sharing classic");
     var score = score; 
-         var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com&display=popup&link=https://powerful-caverns-4175.herokuapp.com&picture=""&name=My+Modern+Library+Shelf&description=How+Classic+Are+You?%21&from_login=1";
+         var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com&display=popup&link=https://powerful-caverns-4175.herokuapp.com&picture=&name="+score+"&description=How+Classic+Are+You?%21&from_login=1";
            $("#social2").append("<div class='social st_sharethis' id='social1'><a target='_blank' href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a></div>");
                     
                     stWidget.addEntry({
