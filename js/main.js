@@ -69,31 +69,40 @@ function classicLevel(){
   var score = myShelf.length;
   $("#classicLevel").text('');
   if (score == 0) {
-    $("#classicLevel").append(classicLevels[0])
+    $("#classicLevel").append(classicLevels[0]);
+    shareClassic(classicLevels[0])
   }
   else if (score == 1) {
-    $("#classicLevel").append(classicLevels[1])
+    $("#classicLevel").append(classicLevels[1]);
+    shareClassic(classicLevels[1])
   }
   else if (score >=2 && score <=4) {
-    $("#classicLevel").append(classicLevels[2])
+    $("#classicLevel").append(classicLevels[2]);
+    shareClassic(classicLevels[2])
   }
   else if (score >=5 && score <=7) {
-    $("#classicLevel").append(classicLevels[3])
+    $("#classicLevel").append(classicLevels[3]);
+    shareClassic(classicLevels[3])
   }
   else if (score >=8 && score <=10) {
-    $("#classicLevel").append(classicLevels[4])
+    $("#classicLevel").append(classicLevels[4]);
+    shareClassic(classicLevels[4])
   }
   else if (score >=11 && score <=13) {
-    $("#classicLevel").append(classicLevels[5])
+    $("#classicLevel").append(classicLevels[5]);
+    shareClassic(classicLevels[5])
   }
   else if (score >=14 && score <=16) {
-    $("#classicLevel").append(classicLevels[6])
+    $("#classicLevel").append(classicLevels[6]);
+    shareClassic(classicLevels[6])
   }
   else if (score >=17 && score <=19) {
-    $("#classicLevel").append(classicLevels[7])
+    $("#classicLevel").append(classicLevels[7]);
+    shareClassic(classicLevels[7])
   }
   else if (score >=20 && score <=22) {
-    $("#classicLevel").append(classicLevels[8])
+    $("#classicLevel").append(classicLevels[8]);
+    shareClassic(classicLevels[8])
   }
   // else if (score >=2 && score <=4) {
   //   $("#classicLevel").append(classicLevels[9])
@@ -199,7 +208,7 @@ function getShelf(){
               // CUSTOM SHARE BUTTONS //
 
               // appendSocial(1, shelfPNG);
-              shareThis(shelfPNG)
+              shareShelf(shelfPNG)
             });
         }, 
       });
@@ -271,6 +280,7 @@ function setCoversSpines(){
         $("#helpBox").removeClass("visible");
         howClassic();
         classicLevel();
+        shareClassic(x, 2);
     if ($("#overlay").css('visibility') == 'hidden') 
          { $("#classicBox").css("z-index", "5001");
         $("#classicDetails").toggleClass("visible");
@@ -535,42 +545,84 @@ function setShelves(first_load) {
           shelfClick();
       }
   
-function shareThis(shelfPNG){
+function shareShelf(shelfPNG){
          var shelfPNG = shelfPNG;
+         // SHARING SHELF IMAGE //
+           var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com&display=popup&link=https://powerful-caverns-4175.herokuapp.com&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
+           $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a target='_blank' href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a></div>");
+                    
+                    stWidget.addEntry({
+                   "service":"twitter",
+                   "element":document.getElementById('social1'),
+                   "url":"https://powerful-caverns-4175.herokuapp.com/",
+                   "title":"Just made my Modern Library Shelf! #books",
+                   "type":"large",
+                   "popup": "false",
+                   "text":"Just made my Modern Library Shelf! #books",
+                   "image": shelfPNG,
+                   "summary":"this is description1"
+           });
+                    stWidget.addEntry({
+                   "service":"pinterest",
+                   "element":document.getElementById('social1'),
+                   "url":"https://powerful-caverns-4175.herokuapp.com/",
+                   "title":"Just made my Modern Library Shelf! #books",
+                   "type":"large",
+                   "popup": "false",
+                   "text":"Just made my Modern Library Shelf! #books",
+                   "image": shelfPNG,
+                   "summary":"this is description1"
+           });
+                  stWidget.addEntry({
+                   "service":"sharethis",
+                   "element":document.getElementById('social1'),
+                   "url":"https://powerful-caverns-4175.herokuapp.com/",
+                   "title":"Just made my Modern Library Shelf! #books",
+                   "type":"large",
+                   "popup": "false",
+                   "text":"Just made my Modern Library Shelf! #books",
+                   "image": shelfPNG,
+                   "summary":"this is description1"
+           });
+}
+
+function shareClassic(score){
+    var score = score; 
          var fb_share_url = "https://www.facebook.com/dialog/feed?_path=feed&app_id=487604788070849&redirect_uri=https://powerful-caverns-4175.herokuapp.com&display=popup&link=https://powerful-caverns-4175.herokuapp.com&picture="+shelfPNG+"&name=My+Modern+Library+Shelf&description=I+just+created+my+shelf%21&from_login=1";
-         $("#socialBox1").append("<div class='social st_sharethis' id='social1'><a target='_blank' href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a></div>");
-                  
+           $("#social2").append("<div class='social st_sharethis' id='social1'><a target='_blank' href="+fb_share_url+"><span type='sbtn' class='st_facebook_custom'><img src='https://ws.sharethis.com/images/facebook_32.png'></span></a></div>");
+                    
+                    stWidget.addEntry({
+                   "service":"twitter",
+                   "element":document.getElementById('social2'),
+                   "url":"https://powerful-caverns-4175.herokuapp.com/",
+                   "title":"Just made my Modern Library Shelf! #books",
+                   "type":"large",
+                   "popup": "false",
+                   "text":"Just made my Modern Library Shelf! #books",
+                   "image": shelfPNG,
+                   "summary":"this is description1"
+           });
+                    stWidget.addEntry({
+                   "service":"pinterest",
+                   "element":document.getElementById('social2'),
+                   "url":"https://powerful-caverns-4175.herokuapp.com/",
+                   "title":"Just made my Modern Library Shelf! #books",
+                   "type":"large",
+                   "popup": "false",
+                   "text":"Just made my Modern Library Shelf! #books",
+                   "image": shelfPNG,
+                   "summary":"this is description1"
+           });
                   stWidget.addEntry({
-                 "service":"twitter",
-                 "element":document.getElementById('social1'),
-                 "url":"https://powerful-caverns-4175.herokuapp.com/",
-                 "title":"Just made my Modern Library Shelf! #books",
-                 "type":"large",
-                 "popup": "false",
-                 "text":"Just made my Modern Library Shelf! #books",
-                 "image": shelfPNG,
-                 "summary":"this is description1"
-         });
-                  stWidget.addEntry({
-                 "service":"pinterest",
-                 "element":document.getElementById('social1'),
-                 "url":"https://powerful-caverns-4175.herokuapp.com/",
-                 "title":"Just made my Modern Library Shelf! #books",
-                 "type":"large",
-                 "popup": "false",
-                 "text":"Just made my Modern Library Shelf! #books",
-                 "image": shelfPNG,
-                 "summary":"this is description1"
-         });
-                stWidget.addEntry({
-                 "service":"sharethis",
-                 "element":document.getElementById('social1'),
-                 "url":"https://powerful-caverns-4175.herokuapp.com/",
-                 "title":"Just made my Modern Library Shelf! #books",
-                 "type":"large",
-                 "popup": "false",
-                 "text":"Just made my Modern Library Shelf! #books",
-                 "image": shelfPNG,
-                 "summary":"this is description1"
-         });
+                   "service":"sharethis",
+                   "element":document.getElementById('social2'),
+                   "url":"https://powerful-caverns-4175.herokuapp.com/",
+                   "title":"Just made my Modern Library Shelf! #books",
+                   "type":"large",
+                   "popup": "false",
+                   "text":"Just made my Modern Library Shelf! #books",
+                   "image": shelfPNG,
+                   "summary":"this is description1"
+           });
+        }
 }
