@@ -625,4 +625,4 @@ function shareClassic(score){
                    "summary":"this is description1"
            });
         }
-}
+
