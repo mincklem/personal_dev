@@ -280,7 +280,6 @@ function setCoversSpines(){
         $("#helpBox").removeClass("visible");
         howClassic();
         classicLevel();
-        shareClassic(x, 2);
     if ($("#overlay").css('visibility') == 'hidden') 
          { $("#classicBox").css("z-index", "5001");
         $("#classicDetails").toggleClass("visible");
@@ -598,8 +597,8 @@ function shareClassic(score){
                    "title":"Just made my Modern Library Shelf! #books",
                    "type":"large",
                    "popup": "false",
-                   "text":"Just made my Modern Library Shelf! #books",
-                   "image": shelfPNG,
+                   "text": score,
+                   "image": "",
                    "summary":"this is description1"
            });
                     stWidget.addEntry({
@@ -609,8 +608,8 @@ function shareClassic(score){
                    "title":"Just made my Modern Library Shelf! #books",
                    "type":"large",
                    "popup": "false",
-                   "text":"Just made my Modern Library Shelf! #books",
-                   "image": shelfPNG,
+                   "text": score,
+                   "image": "",
                    "summary":"this is description1"
            });
                   stWidget.addEntry({
@@ -620,8 +619,8 @@ function shareClassic(score){
                    "title":"Just made my Modern Library Shelf! #books",
                    "type":"large",
                    "popup": "false",
-                   "text":"Just made my Modern Library Shelf! #books",
-                   "image": shelfPNG,
+                   "text": score,
+                   "image": "",
                    "summary":"this is description1"
            });
         }
