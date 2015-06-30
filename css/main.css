@@ -180,7 +180,7 @@ margin-top:30px;
 }
 
 #shareShelf.scrolled {
-	visibility: hidden;
+	visibility: visible;
 	opacity: 0;
 }
 
@@ -1129,10 +1129,15 @@ ClassicScore, minishelves overlap*/
 
 	#shareShelf {
 /*		right: -50px;
-	  left: initial;
+	  left: initial;			
 	  top:100px;*/
 	  visibility: visible
 	}
+
+	#shareShelf.scrolled {
+	visibility: visible;
+	}
+
 	#shareButton2 {
 		display: none
 	}
