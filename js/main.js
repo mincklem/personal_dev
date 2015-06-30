@@ -69,40 +69,49 @@ function classicLevel(){
   var score = myShelf.length;
   $("#classicLevel").text('');
   if (score == 0) {
-    $("#classicLevel").append(classicLevels[0]);
-    shareClassic(classicLevels[0])
+    var level = classicLevels[0];
+    $("#classicLevel").append(level);
+    shareClassic(level)
   }
   else if (score == 1) {
-    $("#classicLevel").append(classicLevels[1]);
-    shareClassic(classicLevels[1]) 
+    var level = classicLevels[1];
+    $("#classicLevel").append(level);
+    shareClassic(level) 
   }
   else if (score >=2 && score <=4) {
-    $("#classicLevel").append(classicLevels[2]);
-    shareClassic(classicLevels[2])
+    var level = classicLevels[2];
+    $("#classicLevel").append(level);
+    shareClassic(level)
   }
   else if (score >=5 && score <=7) {
-    $("#classicLevel").append(classicLevels[3]);
-    shareClassic(classicLevels[3])
+    var level = classicLevels[3];
+    $("#classicLevel").append(level);
+    shareClassic(level)
   }
   else if (score >=8 && score <=10) {
-    $("#classicLevel").append(classicLevels[4]);
-    shareClassic(classicLevels[4])
+    var level = classicLevels[4];
+    $("#classicLevel").append(level);
+    shareClassic(level)
   }
   else if (score >=11 && score <=13) {
-    $("#classicLevel").append(classicLevels[5]);
-    shareClassic(classicLevels[5])
+    var level = classicLevels[5];
+    $("#classicLevel").append(level);
+    shareClassic(level)
   }
   else if (score >=14 && score <=16) {
-    $("#classicLevel").append(classicLevels[6]);
-    shareClassic(classicLevels[6])
+    var level = classicLevels[6];
+    $("#classicLevel").append(level);
+    shareClassic(level)
   }
   else if (score >=17 && score <=19) {
-    $("#classicLevel").append(classicLevels[7]);
-    shareClassic(classicLevels[7])
+    var level = classicLevels[7];
+    $("#classicLevel").append(level);
+    shareClassic(level)
   }
   else if (score >=20 && score <=22) {
-    $("#classicLevel").append(classicLevels[8]);
-    shareClassic(classicLevels[8])
+    var level = classicLevels[8];
+    $("#classicLevel").append(level);
+    shareClassic(level)
   }
   // else if (score >=2 && score <=4) {
   //   $("#classicLevel").append(classicLevels[9])
