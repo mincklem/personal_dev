@@ -283,6 +283,8 @@ function setCoversSpines(){
      }
   }
 
+
+
   function classicClick(){ 
     $("#howClassic").click(function(){
         $(this).toggleClass("flipped");
