@@ -1,2 +1,1 @@
-# personal_dev
-personal development repository
+# rh shelfbuilder development
